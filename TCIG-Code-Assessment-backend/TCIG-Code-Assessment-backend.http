@@ -1,0 +1,6 @@
+@TCIG_Code_Assessment_backend_HostAddress = http://localhost:5185
+
+GET {{TCIG_Code_Assessment_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
