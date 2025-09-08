@@ -7,10 +7,12 @@ namespace TCIG.Infrastructure.Data
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddInfrastructureData(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureDI(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TESTDB;Trusted_Connection=True;"));
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection")
+                    ));
             return services;
 
         }

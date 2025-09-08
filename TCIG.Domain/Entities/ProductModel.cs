@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using static TCIG.Domain.enums.Enums;
 
 namespace TCIG.Domain.Entities
@@ -13,6 +14,7 @@ namespace TCIG.Domain.Entities
 
         [Required]
         [Range(1, 10000)]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 
         [Required]
