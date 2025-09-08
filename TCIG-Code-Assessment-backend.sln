@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCIG-Code-Assessment-backend", "TCIG-Code-Assessment-backend\TCIG-Code-Assessment-backend.csproj", "{EAA42711-965B-4F70-BF3A-1487A099C1A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCIG.Infrastructure", "TCIG.Infrastructure\TCIG.Infrastructure.csproj", "{603A754D-37B5-48A4-9898-98023FD826A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCIG.Domain", "TCIG.Domain\TCIG.Domain.csproj", "{C157C162-DFDB-4753-9C19-5921E2CAC22B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCIG.Application", "TCIG.Application\TCIG.Application.csproj", "{1828EA50-B125-495F-9989-C8564E174204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCIG.API", "TCIG.API\TCIG.API.csproj", "{A6CE7601-A7F8-4736-A5F6-8AD5C12C8702}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{EAA42711-965B-4F70-BF3A-1487A099C1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAA42711-965B-4F70-BF3A-1487A099C1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAA42711-965B-4F70-BF3A-1487A099C1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603A754D-37B5-48A4-9898-98023FD826A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603A754D-37B5-48A4-9898-98023FD826A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603A754D-37B5-48A4-9898-98023FD826A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603A754D-37B5-48A4-9898-98023FD826A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C157C162-DFDB-4753-9C19-5921E2CAC22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C157C162-DFDB-4753-9C19-5921E2CAC22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C157C162-DFDB-4753-9C19-5921E2CAC22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C157C162-DFDB-4753-9C19-5921E2CAC22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1828EA50-B125-495F-9989-C8564E174204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1828EA50-B125-495F-9989-C8564E174204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1828EA50-B125-495F-9989-C8564E174204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1828EA50-B125-495F-9989-C8564E174204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6CE7601-A7F8-4736-A5F6-8AD5C12C8702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CE7601-A7F8-4736-A5F6-8AD5C12C8702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CE7601-A7F8-4736-A5F6-8AD5C12C8702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CE7601-A7F8-4736-A5F6-8AD5C12C8702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

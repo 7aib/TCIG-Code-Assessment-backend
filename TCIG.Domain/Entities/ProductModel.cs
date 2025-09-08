@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static TCIG_Code_Assessment_backend.TCIG.Domain.enums.Enums;
+using static TCIG.Domain.enums.Enums;
 
-namespace TCIG_Code_Assessment_backend.TCIG.Domain.Entities
+namespace TCIG.Domain.Entities
 {
     public class ProductModel
     {
@@ -27,5 +27,6 @@ namespace TCIG_Code_Assessment_backend.TCIG.Domain.Entities
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
         public DateTime? UpdatedDate { get; set; }
+
     }
 }

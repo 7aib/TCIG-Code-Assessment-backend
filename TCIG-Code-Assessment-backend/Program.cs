@@ -1,13 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using TCIG_Code_Assessment_backend.TCIG.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add DbContext with SQL Server
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"))
-);
 
 // Add services to the container.
 
