@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TCIG.Domain.Entities;
+﻿using TCIG.Domain.Entities;
 
 namespace TCIG.Domain.Interfaces
 {
