@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TCIG.Application.Interfaces;
+using TCIG.Application.Services;
+using TCIG.Domain.Interfaces;
+using TCIG.Infrastructure.Repositories;
 
 namespace TCIG.Infrastructure.Data
 {
@@ -13,6 +17,13 @@ namespace TCIG.Infrastructure.Data
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection")
                     ));
+
+            // Register repositories
+            services.AddScoped<IProductRepository, ProductRepoitory>();
+
+            // Register service
+            services.AddScoped<IProductService, ProductService>();
+
             return services;
 
         }

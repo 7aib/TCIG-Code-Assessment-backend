@@ -1,5 +1,5 @@
+using TCIG.API.Controllers;
 using TCIG.Infrastructure.Data;
-using TCIG.API.Controller;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

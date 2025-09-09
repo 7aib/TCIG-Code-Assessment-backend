@@ -23,6 +23,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TCIG.API\TCIG.API.csproj" />
+    <ProjectReference Include="..\TCIG.Application\TCIG.Application.csproj" />
+    <ProjectReference Include="..\TCIG.Domain\TCIG.Domain.csproj" />
     <ProjectReference Include="..\TCIG.Infrastructure\TCIG.Infrastructure.csproj" />
   </ItemGroup>
 

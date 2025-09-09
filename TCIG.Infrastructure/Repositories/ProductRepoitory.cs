@@ -21,7 +21,6 @@ namespace TCIG.Infrastructure.Repositories
         public async Task<IEnumerable<ProductModel>> AddProductsAsync(ProductModel product)
         {
             product.CreatedDate = DateTime.UtcNow;
-            product.Status = Enums.ProductStatus.Active;
 
             dbContext.Products.Add(product);
 
