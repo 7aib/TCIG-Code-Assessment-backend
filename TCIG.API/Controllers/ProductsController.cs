@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using TCIG.Application.DTOs;
 using TCIG.Application.Interfaces;
 
-namespace TCIG.API.Controllers
+namespace TCIG.API.Controller
 {
     [ApiController]
     [Route("api/[controller]")]

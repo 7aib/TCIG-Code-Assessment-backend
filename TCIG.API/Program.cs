@@ -1,4 +1,10 @@
+using TCIG.Application.Interfaces;
+using TCIG.Application.Mappings;
+using TCIG.Application.Services;
+using TCIG.Application.Validators;
 using TCIG.Infrastructure.Data;
+using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,8 +13,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add infrastructure services
+// Add Infrastructure services
 builder.Services.AddInfrastructureDI(builder.Configuration);
+
+// Add Application services
+builder.Services.AddScoped<IProductService, ProductService>();
+
+// AutoMapper
+//builder.Services.AddAutoMapper(typeof(ProductMappingProfile).Assembly);
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<ProductMappingProfile>();
+});
+
+
+// Add FluentValidation
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidator>();
 
 var app = builder.Build();
 
